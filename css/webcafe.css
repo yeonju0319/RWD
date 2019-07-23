@@ -30,7 +30,6 @@ body{
   color: #181818;
 }
 /* 공통 스타일 */
-
 *, *::before, *::after{
   box-sizing: border-box;
 }
@@ -39,7 +38,7 @@ input[type="search"]{
   border: 1px solid #666;
   border-radius: 5px;
   padding: 5px 10px;
-  height: 28px;
+  height: 30px;
 }
 .search-form label, input[type="search"], .btn-search{
   vertical-align: middle;
@@ -57,7 +56,7 @@ input[type="search"]{
   .logo, .member, .search-form{
     width: 100%;
     padding-left: 20px;
-    padding-right:20px;
+    padding-right: 20px;
   }
   /* 모바일 로고 */
   .logo{
@@ -79,16 +78,16 @@ input[type="search"]{
     margin-left: 1em;
   }
   /* 모바일 검색 폼 */
-  }
   input[type="search"]{
     width: calc(100% - 35px);
   }
   .btn-search{
-    background: transparent url('./images/btn_search.png');
+    background: transparent url('./images/btn_search.png') no-repeat;
     background-size: 100%;
     width: 30px;
     height: 30px;
     border: 0;
+    padding: 0;
   }
 }
 /* 데스크탑 레이아웃 */
@@ -141,10 +140,8 @@ input[type="search"]{
     border-radius: 5px;
     color: #fff;
     height: 30px;
-    display: block;
   }
   .btn-search::before{
     content: '검색';
-    background: blue;
   }
 }
